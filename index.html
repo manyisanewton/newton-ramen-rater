@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>sams ramen rating app</title>
+   <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="marquee-container" style="display: flex; justify-content: center; overflow: hidden;background-color:#000000">
+        <marquee class="animated-marquee" style="text-align: center; font-family: 'Playwrite AU NSW', sans-serif; color: #7bff00;; padding: 10px; width: 100%;font-size:25px">
+            🍜 Welcome to Ramen Rater, your go-to app for exploring and rating delicious ramen dishes! Each image is a flavor adventure waiting for your review. Enjoy the journey! 🍲✨
+        </marquee>
+    </div>
+    <div id="ramen-menu"></div>
+    
+    <div id="ramen-detail">
+        <img class="detail-image" src="" alt="Ramen Image">
+        <h2 class="name"></h2>
+        <h3 class="restaurant"></h3>
+        <p class="rating"></p>
+        <p class="comment"></p>
+        <button id="delete-btn" style="display: none;">Delete Ramen</button>
+    </div>
+
+    <div class="form-container">
+        <form id="new-ramen-form">
+            <input type="text" name="name" placeholder="Ramen Name" required>
+            <input type="text" name="restaurant" placeholder="Restaurant" required>
+            <input type="text" name="image" placeholder="Image URL" required>
+            <input type="number" name="rating" placeholder="Rating (1-10)" min="1" max="10">
+            <input type="text" name="comment" placeholder="Comment">
+            <button type="submit">Add Ramen</button>
+        </form>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>

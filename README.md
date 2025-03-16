@@ -1,1 +1,1 @@
-# newton-ramen-rater
+# sam_code_codechallenge

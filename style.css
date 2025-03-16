@@ -1,0 +1,153 @@
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+        background-color: #979DAC; 
+        color: #020f29;
+        line-height: 1.6;
+    }
+
+    #ramen-menu {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 15px;
+        padding: 20px;
+        justify-content: center;
+        background-color: #fff;
+        box-shadow: 0 2px 5px rgba(2, 11, 29, 0.2); 
+        margin: 20px;
+        border-radius: 10px;
+    }
+
+    #ramen-menu img {
+        width: 120px;
+        height: 120px;
+        object-fit: cover;
+        border-radius: 8px;
+        cursor: pointer;
+        transition: transform 0.3s ease, border-color 0.3s ease;
+        border: 2px solid #fff;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); 
+    }
+
+    #ramen-menu img:hover {
+        transform: scale(1.05);
+        border-color: #0466C8; 
+    }
+
+    #ramen-detail {
+        max-width: 600px;
+        margin: 20px auto;
+        padding: 20px;
+        background-color: #fff;
+        border-radius: 10px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); 
+    }
+
+    #ramen-detail .detail-image {
+        width: 100%;
+        max-height: 300px;
+        object-fit: cover;
+        border-radius: 8px;
+        margin-bottom: 15px;
+    }
+
+    #ramen-detail .name {
+        color: #0466C8; 
+        margin-bottom: 10px;
+        font-size: 1.8em;
+    }
+
+    #ramen-detail .restaurant {
+        color: #5C677D; 
+        margin-bottom: 15px;
+        font-size: 1.2em;
+    }
+
+    #ramen-detail .rating {
+        color: #0353A4; 
+        font-weight: bold;
+        margin-bottom: 10px;
+    }
+
+    #ramen-detail .comment {
+        font-style: italic;
+        color: #7D8597; 
+        margin-bottom: 15px;
+    }
+
+    #delete-btn {
+        background-color: #023E7D; 
+        color: white;
+        border: none;
+        padding: 8px 16px;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); 
+    }
+
+    #delete-btn:hover {
+        background-color: #ff0000; 
+    }
+
+    .form-container {
+        max-width: 600px;
+        margin: 20px auto;
+        padding: 20px;
+        background-color: #fff;
+        border-radius: 10px;
+        box-shadow: 0 2px 5px rgba(0,24,69,0.2); 
+    }
+
+    #new-ramen-form {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    #new-ramen-form input {
+        padding: 10px;
+        border: 1px solid #33415C; 
+        border-radius: 5px;
+        font-size: 1em;
+        transition: border-color 0.3s ease;
+    }
+
+    #new-ramen-form input:focus {
+        outline: none;
+        border-color: #0466C8;
+    }
+
+    #new-ramen-form button {
+        padding: 12px;
+        background-color: #0466C8; 
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 1em;
+        transition: background-color 0.3s ease;
+        box-shadow: 0 2px 4px rgba(0,40,85,0.2); 
+    }
+
+    #new-ramen-form button:hover {
+        background-color: #0353A4; 
+    }
+
+    @media (max-width: 768px) {
+        #ramen-menu img {
+            width: 100px;
+            height: 100px;
+        }
+
+        #ramen-detail, .form-container {
+            margin: 10px;
+            padding: 15px;
+        }
+    }
